@@ -587,6 +587,7 @@ __metadata:
     "@vitest/coverage-v8": "npm:^3.0.2"
     "@xstd/custom-error": "npm:^0.1.0"
     "@xstd/infer-event-map-of": "npm:^0.0.1"
+    "@xstd/noop": "npm:^1.0.0"
     prettier: "npm:^3.4.2"
     prettier-plugin-organize-imports: "npm:^4.1.0"
     typescript: "npm:^5.7.3"
@@ -605,6 +606,13 @@ __metadata:
   version: 0.0.1
   resolution: "@xstd/infer-event-map-of@npm:0.0.1"
   checksum: 10c0/ed8c02f1d8de3fb08e64d959ac1dda2e4350c24cb98a22a3e625ffed2644ec62de974eb7845252ce83ee0345b3cffee0e32eb480959d21729ddeca3088fcc2b4
+  languageName: node
+  linkType: hard
+
+"@xstd/noop@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@xstd/noop@npm:1.0.0"
+  checksum: 10c0/464e6647dfbeea32366eb58af5c52047e08f42cffe8c69065ffe9a3d5aaf52c9b8fb5ca08ba3782770e2040b6716577967e41873ca374212be038e27c5495f05
   languageName: node
   linkType: hard
 
