@@ -586,6 +586,7 @@ __metadata:
   dependencies:
     "@vitest/coverage-v8": "npm:^3.0.2"
     "@xstd/custom-error": "npm:^0.1.0"
+    "@xstd/functional": "npm:^0.1.0"
     "@xstd/infer-event-map-of": "npm:^0.0.1"
     "@xstd/noop": "npm:^1.0.0"
     prettier: "npm:^3.4.2"
@@ -599,6 +600,13 @@ __metadata:
   version: 0.1.0
   resolution: "@xstd/custom-error@npm:0.1.0"
   checksum: 10c0/b8a61ec547de3d9a52ecceb23b2e4d69fc42dbabe5f59c6fca4b786a0c69645b6a0cd5c8f8bf4b50a4d352f8a38622162e5a56930e2078d7f5b41a2442b4c216
+  languageName: node
+  linkType: hard
+
+"@xstd/functional@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@xstd/functional@npm:0.1.0"
+  checksum: 10c0/2584f379939c771d367b9c448ea952096e958aeec7009a29cecaa0b4d2630b0c86098166eb7848c6d0680fbe291a2ee4e115d4f047729d2cf5406f374227e36f
   languageName: node
   linkType: hard
 

@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@xstd/custom-error": "^0.1.0",
+    "@xstd/functional": "^0.1.0",
     "@xstd/infer-event-map-of": "^0.0.1",
     "@xstd/noop": "^1.0.0"
   }
