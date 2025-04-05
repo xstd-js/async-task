@@ -18,7 +18,7 @@ export function firstFulfilledAsyncTask<GArguments extends readonly any[], GRetu
   { rejectsOn = 'all-errored' }: FirstAsyncTaskToResolveOptions = {},
 ): AsyncTask<GArguments, GReturn> {
   return async (..._args: AsyncTaskArguments<GArguments>): Promise<GReturn> => {
-    const [args, signal] = inspectAsyncTaskArguments<GArguments, GReturn>(_args);
+    const [args, signal] = inspectAsyncTaskArguments<GArguments>(_args);
     return runInAbortableContext<GReturn>(async (signal: AbortSignal): Promise<GReturn> => {
       const promises: readonly Promise<GReturn>[] = Array.from(
         tasks,

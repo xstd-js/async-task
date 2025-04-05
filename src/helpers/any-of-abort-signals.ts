@@ -1,4 +1,4 @@
-export type OptionalAbortSignal = AbortSignal | undefined;
+export type OptionalAbortSignal = AbortSignal | undefined | void;
 
 export function anyOfAbortSignals(signals: readonly OptionalAbortSignal[]): AbortSignal {
   return AbortSignal.any(

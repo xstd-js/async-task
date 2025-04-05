@@ -13,11 +13,11 @@
  * ```
  */
 export function rejectPromiseWhenSignalIsAborted<GValue>(
-  promise: Promise<GValue>,
+  promise: PromiseLike<GValue>,
   signal?: AbortSignal,
 ): Promise<GValue> {
   if (signal === undefined) {
-    return promise;
+    return promise instanceof Promise ? promise : Promise.try(() => promise);
   } else {
     return new Promise<GValue>(
       (resolve: (value: GValue) => void, reject: (reason?: unknown) => void): void => {

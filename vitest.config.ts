@@ -4,9 +4,12 @@ export default defineConfig({
   test: {
     dir: 'src',
     coverage: {
-      provider: 'v8',
+      provider: 'istanbul',
       include: ['src/**/*.ts'],
-      exclude: ['src/**/types/**/*.ts'],
+      exclude: [
+        'src/**/*.{test,bench,protected,private}.ts',
+        'src/**/*.{protected,private}/**/*.ts',
+      ],
       thresholds: {
         100: true,
       },

@@ -9,6 +9,7 @@
     "fb:test": "vitest",
     "fb:test:coverage": "vitest run --coverage",
     "fb:bench": "vitest bench",
+    "fb:typedoc": "typedoc --options typedoc.json --tsconfig tsconfig.json",
     "fb:prod": "node fabrique/actions/cli/build-and-publish.cli.js --mode prod",
     "fb:dev": "node fabrique/actions/cli/build-and-publish.cli.js --mode dev",
     "fb:rc": "node fabrique/actions/cli/build-and-publish.cli.js --mode rc"
@@ -23,15 +24,17 @@
     "url": "git+https://github.com/xstd-js/async-task.git"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^3.0.2",
-    "prettier": "^3.4.2",
+    "@types/node": "^22.13.4",
+    "@vitest/coverage-istanbul": "^3.0.5",
+    "prettier": "^3.5.1",
     "prettier-plugin-organize-imports": "^4.1.0",
-    "typescript": "^5.7.3",
-    "vitest": "^3.0.2"
+    "typedoc": "^0.27.7",
+    "typescript": "5.8.0-beta",
+    "vitest": "^3.0.5"
   },
   "packageManager": "yarn@4.6.0",
   "fabrique": {
-    "version": "0.2.7",
+    "version": "0.3.2",
     "type": "lib"
   },
   "dependencies": {
